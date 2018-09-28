@@ -1,0 +1,25 @@
+language: python
+python:
+  - "2.7"
+  - "3.3"
+  - "3.5-dev"  # 3.5 development branch
+  - "3.6"
+  - "3.6-dev"  # 3.6 development branch
+  - "3.7-dev"  # 3.7 development branch
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+
+
+# command to run tests and package module python
+script:
+  - pytest
+  - python setup.py sdist
+
+deploy:
+  provider: releases
+  api_key: b0100fbc041b8a13cda54763fe279319bd73dd8b
+  file: "./dist/jmms.calculadora-0.0.1.tar.gz"
+  skip_cleanup: true
+  on:
+    tags: true
