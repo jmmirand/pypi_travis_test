@@ -1,8 +1,0 @@
-README.rst
-setup.py
-jmms/__init__.py
-jmms/calculadora.py
-jmms.calculadora.egg-info/PKG-INFO
-jmms.calculadora.egg-info/SOURCES.txt
-jmms.calculadora.egg-info/dependency_links.txt
-jmms.calculadora.egg-info/top_level.txt
