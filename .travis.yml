@@ -11,6 +11,8 @@ install:
   - pip install -r requirements.txt
   - python setup.py sdist
   - ls -lrt
+  - ls -lrt dist
+  - env
 
 # command to run tests
 script: pytest
