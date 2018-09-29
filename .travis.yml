@@ -11,6 +11,7 @@ install:
 script:
 - pytest
 - python setup.py sdist
+- echo $api_key
 deploy:
   provider: releases
   api_key: $api_key
@@ -18,3 +19,4 @@ deploy:
   on:
     repo: jmmirand/pypi_travis_test
     branch: feature/test
+
