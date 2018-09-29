@@ -13,7 +13,8 @@ script:
 - python setup.py sdist
 deploy:
   provider: releases
-  api_key: 5c775edeaa83dabe97599b6420b5e9ceec432b57
+  api_key:
+    secure: "OYszq6lGId5JIzlKGD3RkjatGoqm1iA4L2X0fjNz0etz5TtJ5w03toXWYtRgIsOCHAPOdkSpZgIMcWmpGAGZ2kw9YLJKvy/fbKWgJgrB6XlB+zAzYFocf97hYyAct+66yv8yuINcPIwnt4E5+l+QR6f5q/RNcExPVPrJXsiqEaI/KjFR+zDh+j/NzIi5dkzhg2taff6wrAXyiylNIzcxeAR1818dfH0tq7n+tsjK5Q/eL1OCRauTV+Bi7K6/ryL2Z4FbKEg9u6I9tffPyFEnNcePklWajQfndfLRyfX4aigtJwK66Ypzsm2EuVp+sNym2EVyyYypDXohlEaXH3sHUmEwr25VI37fPgLSyLXC4UfxCzRf6ijyyQSEJIcF2oFRwSm111bSUrT38e8dnaAFy4evEQWCqMt9yC0Tda9i3DRh5jgxeEehwkZQ8QdHwTTT5I2lEt+8SjV1iEwAuHK7Q+Lb8eddr8dddpNQPcMO9wJiD8IrEwsayowRmVgzKLR3gWks1qUYIq8hpuwuaSLT3ZZ0obyi4ny6Qq2g8cxk1sc+KwFOSjjCfkwlLsgBG0eIaTxnP7C2LtHXW5boz/GLQQlpDYyEDxZCOw2BmpvONnzLnB0ErztcnS2hO0R/UrUKDQa6Fi/uvI9olqtZgdomxLg2Lkkww8GTxNoLq024dH0="
   file: dist/jmms.calculadora-0.0.1.tar.gz
   on:
     repo: jmmirand/pypi_travis_test
